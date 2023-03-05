@@ -524,7 +524,7 @@ Zotero.Jasminum = new function () {
                     if (extraData.match(/👍/)) {  // 先用这简单的展示，便于展示排序
                         extraData = extraData.replace(/👍\s?\d+\[[\d-]{8,10}\]/, "");
                     }
-                    extraAdd = "👍" + citeString;
+                    extraAdd = "" + citeString;
                 }
 
                 if (cssci) {  // 或者可以参考其他核心期刊数据来源
@@ -536,7 +536,7 @@ Zotero.Jasminum = new function () {
                     if (extraData.match(/📗/)) {
                         extraData = extraData.replace(/📗<.*?>/, "");
                     }
-                    extraAdd += '📗' + cssciString;
+                    extraAdd += '' + cssciString;
                 }
                 this.Utils.showPopup(
                     "期刊、引用抓取完毕",
